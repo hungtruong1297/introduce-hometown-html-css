@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6rem;
+  color: rgb(40, 40, 40);
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav p,
+a,
+li,
+ul,
+h2 {
+  font-weight: bold;
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+h2 {
+  padding: 1rem 0;
+}
+h3 {
+  padding: 1rem 0;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  padding-left: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-light {
+  background-color: rgb(179, 226, 255);
+  border-radius: 5px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .split {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2rem;
+  }
+  header h2 {
+    color: white;
+    padding: 0;
+  }
+  header p {
+    color: white;
+  }
+}
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  ul {
+    flex-direction: row;
+    justify-content: right;
+  }
+  li {
+    padding: 1rem;
+  }
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+  }
+  .bg-img {
+    background-image: url(/img/tham-quan-dak-lak.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+  }
+}
+
+header h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-bottom: 0;
+  padding: 2rem 0;
+}
+
+main h3 {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+main img {
+  padding-bottom: 1rem;
+  border-radius: 15px;
+}
+a:hover {
+  opacity: 85%;
+}
+
+footer {
+  margin-top: 2rem;
+}
+footer p {
+  font-style: italic;
+}
+.italic-bold {
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer img {
+  height: 50px;
+  margin: auto;
+}
